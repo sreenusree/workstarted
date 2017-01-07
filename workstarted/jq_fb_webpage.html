@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bs</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\WELCOME\Desktop\baabtra\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<script src="C:\Users\WELCOME\Desktop\baabtra\jquery-3.1.1.min.js"></script>
+	<script src="C:\Users\WELCOME\Desktop\baabtra\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#fblogin").click(function()
+  { 
+    var e=$("#emil").val();
+    var p=$("#password1").val();
+    if(e=="")
+    {
+      $("#errorr").html("please enter name");
+      
+    }
+ 
+ else if(p=="")
+ {
+  $("#error").html("please enter name");
+
+ }
+ else
+ {
+  alert("Login Succesfuly");
+ }
+  });
+    $("#sign_btn").click(function()
+
+  {
+    var f=0;
+    var fname=$("#fname").val();
+    var fn=fname.length;
+    if(fn<3)
+    {
+       $("#errorr1").html("please enter Firstname");
+       $("#fname").focus();
+    }
+    else{
+      $("#errorr1").html("");
+      f=f+1;
+      
+    }
+    var sur=$("#surn").val();
+    if(sur=="")
+    {
+      $("#errorr2").html("please enter Surname");
+      $("#surn").focus();
+    }
+    else
+    {
+      $("#errorr2").html("");
+       f=f+1;
+      
+    }
+    var mob=$("#mb").val();
+    
+    if(mob=="")
+    {
+      $("#errorr3").html("please Enter 10 digit mobile number");
+       
+    }
+    
+    else 
+    {
+      $("#errorr3").html("");
+       f=f+1;
+      
+    }
+    var email_id=$("#email1").val();
+    if(email_id=="")
+    {
+      $("#errorr4").html("please enter valid email_id");
+       $("#email").focus();
+    }
+    else
+    {
+      $("#errorr4").html("");
+       f=f+1;
+      
+    }
+    var pswd=$("#pass").val();
+    if(pswd<8)
+    {
+       $("#error5").html(" Enter atleast 8 letter");
+        $("#pass").focus();
+    }
+    else
+    {
+      $("#error5").html("");
+       f=f+1;
+    
+    }
+    var d=$("#dob").val();
+    if(d=="")
+    {
+      $("#error6").html("please enter DOB");
+       $("#dob").focus();
+    }
+    else
+    {
+      $("#error6").html("");
+       f=f+1;
+       
+      
+    }
+    if(f==6) {
+
+
+    alert("Account Succesfuly Created");
+    $("#error6").html("");
+      var fname=$("#fname").val("");
+      var sur=$("#surn").val("");
+      var d=$("#dob").val("");
+      var pswd=$("#pass").val("");
+       var email_id=$("#email1").val("");
+       var mob=$("#mb").val("");
+
+    
+   }
+   
+
+  });
+
+
+  });
+
+</script>
+</head>
+<body>
+<div class ="container-fluid">
+<div class="row">
+<div class= "col-md-4 col-lg-4 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="right;background-color:#3b5998;border:20px;height:90px;padding-top:23px">
+<p class="text-center">
+ <font size ="6" color ="white"><b>facebook</b></font></p>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 hidden-sm hidden-xs"  style="right;background-color:#3b5998;border:20px;height:90px">
+</div>
+<div class="col-md-5 col-lg-5  col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="left;background-color:#3b5998;border:20px;height:90px">
+<div class="col-md-5 col-lg-5 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="left;background-color:#3b5998;border:20px;height:90px;padding-top:23px" >
+<font size ="2" color ="white" ><b>Email or Phone<br/></b></font>
+ <form>
+      <input type ="text" name ="txt1" size="20" id="emil"/><label id="errorr"></label>
+       </form>
+       </div>
+
+       <div class="col-md-5 col-lg-5 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="left;background-color:#3b5998;border:20px;height:90px;padding-top:23px">
+       <font size ="2" color ="white" ><b>Password<br/></b></font>
+<form align="center">
+      <input type ="text" name ="txt2" size="20" id="password1"/><label id="error"></label>
+       </form></div>
+<div class="col-md-2 col-lg-2 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="left;background-color:#3b5998;border:5px;height:90px;padding-top:34px">
+      <form align="center">
+      <input type ="submit" name ="btn1" value ="Log In" class="btn" style="background-color:#3b5998;border-color:black;size:medium" id="fblogin" />
+      </form>
+      </div>
+      </div>
+     
+      <div class="col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 hidden-sm hidden-xs">
+       <img src ="IMG.jpg" width ="700px" height="480px" alt ="img of connecting people"/>
+      </div>
+ <div class="col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"  style="right:-40px;">
+      <h3>sign up</h3>
+      </div>
+      <div class="col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-4 col-xs-offset-3 col-xs-4" >
+      <div class="col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-4 col-xs-offset-3 col-xs-4" style="right:-28px" >
+      <input type="text" name="txt1" placeholder="Firstname" style="height:39px;width:194px" id="fname"><label id="errorr1"></label>
+      </div>
+      <div class="col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 col-sm-offset-3 col-sm-4 col-xs-offset-3 col-xs-4" >
+      <input type="text" name="txt2" placeholder="Surname" style="height:39px;width:194px" id="surn"><label id="errorr2"></label><br/><br/><label id="errorr2"></label>
+      </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"  style="right:-40px">
+     <input  type="text" name="mobile" placeholder="mobile number" style="right:-40px;height:39px;width:399px" id="mb"><label id="errorr3"></label>
+		</br></br><input size="56px" type="text" name="email" placeholder=" Email adress " style="right:-40px;height:39px;width:399px" id="email1"><label id="errorr4"></label></br></br>
+		<input  type="password" name="password" placeholder="password" id="pass" style="right:-40px;height:39px;width:399px" ><label id="error5"></label></br></br></div>
+		<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"  style="right:-40px" >
+     <input type="radio" name="gender" value="male" id="gender" checked="true"> Male <input type="radio" name="gender" value="female" id="gender"> Female<br/><br/>
+     
+      </div>
+     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"  style="right:-40px">
+      <input type="date" name="dob"  style="right:-40px;height:39px;width:260px" id="dob"><label id="error6"></label>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6"  style="right:-50px">
+      
+		<font size="2px">By clicking Sign Up,you agree to our terms<br/> and that you have 
+       read our Data Use Policy,including our Cookie Use </font></br></br> <input  type="button" id="sign_btn" style="background-color:#008B00;" value="Sign Up Now!" name="signup" onclick="myFunction()" class="btn btn-default" >
+		</button>
+      </div>
+
+</div>
+</div>
+
+</body>
+</html>
